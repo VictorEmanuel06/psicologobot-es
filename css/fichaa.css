@@ -1,0 +1,68 @@
+/* Estilo do fundo da página */
+body{
+    background-image: url("../img/escritorio.jpg"); /* imagem de fundo do site */
+    background-size: cover; /* faz a imagem ocupar toda a tela */
+    background-position: center; /* centraliza a imagem */
+    background-repeat: no-repeat; /* impede que a imagem se repita */
+    height: 100vh; /* altura da página igual à altura da tela */
+    margin: 0; /* remove margem padrão do navegador */
+}
+
+/* Estilo do título principal */
+.titulo{
+    text-align: center; /* centraliza o texto */
+    color: #ffffff; /* cor do texto (branco) */
+    font-size: 34px; /* tamanho da fonte */
+    animation: aparecer 1s ease; /* aplica animação ao carregar */
+}
+
+/* Criação da animação chamada "aparecer" */
+@keyframes aparecer{
+    from{
+        opacity:0; /* começa invisível */
+        transform: translateY(-20px); /* começa um pouco acima */
+    }
+    to{
+        opacity:1; /* termina totalmente visível */
+        transform: translateY(0); /* volta para posição normal */
+    }
+}
+
+/* Caixa principal onde ficam os campos do formulário */
+.container{
+    background: white; /* cor de fundo da caixa */
+    width: 300px; /* largura da caixa */
+    margin: auto; /* centraliza horizontalmente */
+    padding: 20px; /* espaço interno */
+    border-radius: 10px; /* cantos arredondados */
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2); /* sombra ao redor */
+}
+
+/* Estilo dos campos de entrada (input) */
+input{
+    width: 90%; /* largura do campo */
+    padding: 8px; /* espaço interno do campo */
+    margin: 8px 0; /* espaço entre os campos */
+}
+
+/* Estilo principal do botão */
+.btn{
+    background: #7d1c09; /* cor de fundo do botão */
+    color: white; /* cor do texto */
+    border: none; /* remove borda */
+    padding: 12px; /* espaço interno */
+    width: 100%; /* botão ocupa toda largura */
+    cursor: pointer; /* muda cursor para mãozinha */
+    font-size: 16px; /* tamanho da fonte */
+    border-radius: 6px; /* cantos arredondados */
+
+    transition: all 0.3s ease; /* animação suave nas mudanças */
+}
+
+/* Efeito quando passa o mouse sobre o botão */
+.btn:hover{
+    background: #a1260e; /* muda a cor do botão */
+    transform: translateY(-2px); /* levanta o botão levemente */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3); /* cria sombra maior */
+}
+
