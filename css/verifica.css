@@ -1,0 +1,57 @@
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(100, 50, 33);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    text-align:center;
+    width: 300px;
+
+}
+button{
+    margin: 20px;
+    padding:10px 20px;
+    border:none;
+    background:rgb(89, 89, 230);
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+#resultado{
+    margin-top:20px;
+    font-weight:bold;
+}
+
+/* MOBILE*/
+
+@media(max-width: 600px){
+    .container{
+        width: 95%;
+        padding: 20px;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
+
+.caixa-voltar{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btnvoltar{
+    width: 150px;
+    height: 40px;
+}

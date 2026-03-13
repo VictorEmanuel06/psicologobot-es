@@ -66,3 +66,27 @@ input{
     box-shadow: 0 6px 15px rgba(0,0,0,0.3); /* cria sombra maior */
 }
 
+.caixa-voltar{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.voltar{
+    width: 200px;
+    height: 40px;
+    margin: 50px;
+    border: none;
+    border-radius: 9px;
+    font-size: 15px;
+    cursor: pointer;
+    background: #7d1c09;
+    color: white;
+
+    transition: all 0.3s ease;
+}
+
+.voltar:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}

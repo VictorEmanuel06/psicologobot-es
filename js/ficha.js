@@ -18,3 +18,7 @@ function criarPaciente(){
     console.log("Objeto paciente:", paciente)
     console.log("Propriedades do objeto:", propriedades)
 }
+
+document.getElementById("btnvoltar").addEventListener("click", function(){
+    window.location.href = "index.html";
+});

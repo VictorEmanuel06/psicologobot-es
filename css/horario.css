@@ -1,0 +1,77 @@
+body{
+    margin:0;
+    font-family: Arial;
+    background:#f2f2f2;
+}
+ 
+.container{
+    text-align:center;
+    padding:30px;
+}
+
+h1 {
+    color: rgb(64, 46, 185);
+}
+ 
+button{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    background:#6b2c1a;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+ 
+/* animação do botão */
+button:hover{
+    transform:scale(1.1);
+    background:#8b3a20;
+}
+ 
+/* container horarios */
+#resultado{
+    margin-top:25px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+ 
+/* cartões de horario */
+.horario{
+    background:white;
+    padding:15px 25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    font-size:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+ 
+/* efeito ao passar mouse */
+.horario:hover{
+    transform:translateY(-5px);
+    background:#e6f0ff;
+}
+ 
+/* responsividade */
+@media(max-width:500px){
+.horario{
+font-size:18px;
+padding:12px 20px;
+}
+}
+
+.btnvoltar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voltar{
+    width: 200px;
+    height: 50px;
+    margin: 30px;
+}
